@@ -44,12 +44,12 @@ const sajivanorderRoutes = require('./routes/SajivanOrderRoute');
 const roleRoutes = require('./routes/roleRoutes');
 const activityLogRoutes = require('./routes/activityLogRoutes');
 
-const leadRouter = require("./routes/CRM/leadUserRoute");
-const agentRouter = require("./routes/CRM/agentRoute");
-const leadorderRouter = require("./routes/CRM/leadorderRoute");
-const leadproductRouter = require("./routes/CRM/leadprodRoute");
+// const leadRouter = require("./routes/CRM/leadUserRoute");
+// const agentRouter = require("./routes/CRM/agentRoute");
+// const leadorderRouter = require("./routes/CRM/leadorderRoute");
+// const leadproductRouter = require("./routes/CRM/leadprodRoute");
 const eventRouter = require("./routes/eventRoute");
-const allleadRouter = require("./routes/CRM/allleadRoute");
+// const allleadRouter = require("./routes/CRM/allleadRoute");
 const maintenanceRouter  = require('./routes/maintenanceRoutes');
 const checkMaintenanceMode = require('./middlewares/checkMaintenanceMode');
 // const rolesRouter = require("./routes/roleRoute");
@@ -165,11 +165,11 @@ app.use('/api/roles', roleRoutes);
 app.use('/api/activity-logs', activityLogRoutes);
 
 // crm routes
-app.use("/api/leaduser", leadRouter);
-app.use("/api/agent", agentRouter);
-app.use("/api/leadorder", leadorderRouter);
-app.use("/api/leadproduct", leadproductRouter);
-app.use("/api/alllead", allleadRouter);
+// app.use("/api/leaduser", leadRouter);
+// app.use("/api/agent", agentRouter);
+// app.use("/api/leadorder", leadorderRouter);
+// app.use("/api/leadproduct", leadproductRouter);
+// app.use("/api/alllead", allleadRouter);
 
 app.use(notFound);
 app.use(errorHandler);
