@@ -39,7 +39,7 @@ const enqRouter = require("./routes/enqRoute");
 const couponRouter = require("./routes/couponRoute");
 const uploadRouter = require("./routes/uploadRoute");
 const postRouter = require("./routes/postRoute");
-const imageRoutes = require("./routes/imageRoute");
+// const imageRoutes = require("./routes/imageRoute");
 const sajivanorderRoutes = require('./routes/SajivanOrderRoute');
 const roleRoutes = require('./routes/roleRoutes');
 const activityLogRoutes = require('./routes/activityLogRoutes');
@@ -155,7 +155,7 @@ app.use("/api/enquiry", enqRouter);
 app.use("/api/upload", uploadRouter);
 app.use("/api/blogpost", postRouter);
 app.use("/api/events", eventRouter);
-app.use('/api/images', imageRoutes);
+// app.use('/api/images', imageRoutes);
 app.use('/api/sajivanorders', sajivanorderRoutes);
 app.use('/api/admin/maintenance', maintenanceRouter);
 
