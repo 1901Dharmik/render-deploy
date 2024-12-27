@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const sharp = require('sharp');
-const Image = require('../models/imageModel');
+const Image = require('../models/ImageModel');
 const upload = require('../middlewares/upload');
 const path = require('path');
 
